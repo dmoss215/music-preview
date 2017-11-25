@@ -19,13 +19,7 @@ $("#submit-button").on("click", function() {
           console.log(newResponse); 
           console.log(preview); 
 
-      // Create a source element with the preview url
-      //  <source id="song-result" src="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview19/v4/41/cb/e3/41cbe381-2991-071b-7985-76afbbabab6a/mzaf_5021382539648526963.plus.aac.p.m4a" type="audio/mp4" />
-          // let songDiv = $("<source>");
-          // songDiv.attr("src", preview);
-          // songDiv.attr("type", "audo/mp4");
-
-      //   Create <img> element and add album cover              <img src="http://is3.mzstatic.com/image/thumb/Music6/v4/45/33/1a/45331a92-1134-8838-8780-339919d354a1/source/100x100bb.jpg" alt="">
+      //   Create <img> element and add album cover             
       let artwork = $("<img>");
       artwork.attr("src", albumCover);
 
@@ -48,7 +42,7 @@ $("#submit-button").on("click", function() {
       // This can be changed to true to autoplay the track
       audioPlayer.attr("autoplay", true);
 
-      // Add audio player to the result box
+      // Add audio player, album cover and song and artist name to the result box
 
        $("#audio-player").append(audioPlayer);
        $("#album-cover").append(artwork);

@@ -25,3 +25,7 @@ h1 {
     font-size: 12px;
     font-family: 'Jura', sans-serif;
 }
+
+#category-button{
+    text-align: center;
+}
