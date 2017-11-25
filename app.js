@@ -11,6 +11,9 @@ $("#submit-button").on("click", function() {
           // Parse results into JSON because they are returned as a string, then get the preview url
           let newResponse = JSON.parse(response);
           let preview = newResponse.results[0].previewUrl;
+          let artist = newResponse.results[0].artistName;
+          let track = newResponse.results[0].trackName;
+          let albumCover = newResponse.results[0].artworkUrl100;
 
           console.log(response);
           console.log(newResponse); 
@@ -22,6 +25,16 @@ $("#submit-button").on("click", function() {
           // songDiv.attr("src", preview);
           // songDiv.attr("type", "audo/mp4");
 
+      //   Create <img> element and add album cover              <img src="http://is3.mzstatic.com/image/thumb/Music6/v4/45/33/1a/45331a92-1134-8838-8780-339919d354a1/source/100x100bb.jpg" alt="">
+      let artwork = $("<img>");
+      artwork.attr("src", albumCover);
+
+      // Create div for artist and song title
+      let artistNameHolder = $("<p>");
+      artistNameHolder.text(artist);
+
+      let songNameHolder = $("<p>");
+      songNameHolder.text(track);
       /**
       * Build out HTML Audio Player
       */
@@ -38,5 +51,8 @@ $("#submit-button").on("click", function() {
       // Add audio player to the result box
 
        $("#audio-player").append(audioPlayer);
+       $("#album-cover").append(artwork);
+       $("#song-info").append(artistNameHolder);
+       $("#song-info").append(songNameHolder);
       });
   });
