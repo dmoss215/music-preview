@@ -5,25 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>iTunes API</title>
+    <!-- Google Fonts  font-family: 'Jura', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="search-box">
-        <input type="text" class="form-control" placeholder="Text input" id="song-search">
-        <button type="submit" class="btn btn-primary" id="submit-button">Submit</button>
+    <div class="container">
+
+
+
+        
+    <div class="jumbotron">
+        <div class="row header-row">
+            <h1>DJ Survivor is Coming Soon</h1>
+        </div>
+        <div class="row search-row">
+            <div class="col-lg-2">
+                
+            </div>
+
+            <div class="col-lg-8 search-box">
+                <input type="text" class="form-control" placeholder="Search for song" id="song-search">
+                <button type="submit" class="btn btn-primary" id="submit-button">Submit</button>
+            </div>
+
+            <div class="col-lg-2">
+
+            </div>
+
+        </div>
+        
+        <div class="row player-row">
+            <div class="col-lg-2">
+                
+            </div>
+            <div class="col-lg-8 result">
+                <audio id="result-box" controls preload="none" style="width:480px;">
+                    
+
+                </audio>
+            </div>
+            <div class="col-lg-2">
+
+            </div>
+
+        </div>
+
+    </div>
     </div>
 
-    <div class="result">
-        <audio id="result-box" controls preload="none" style="width:480px;">
-           
 
-        </audio>
-    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>

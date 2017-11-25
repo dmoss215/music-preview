@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+    font-family: 'Jura', sans-serif;
+    margin-bottom: 25px;
+}
+
+#submit-button {
+    text-align: center;
+    background-color: #44bc8e;
+}
+
+#song-search {
+    margin-bottom: 15px;
+}
+
+.search-row {
+    margin-bottom: 40px;
+}
+
+.jumbotron {
+    background-color: #44bc8e;
+}
