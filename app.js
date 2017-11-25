@@ -1,3 +1,17 @@
+
+$("#category-button").on("click", function(){
+    let categories = ["COUNTRY", "ROCK", "RAP", "HIP HOP", "R&B", "ALTERNATIVE", "GRUNGE", "BOY BANDS"]
+    let category = categories[Math.floor(Math.random() * categories.length)];
+    console.log (category);
+    let categoryDiv = $("<p>");
+
+    categoryDiv.text("Category is: " + category + ".  Good Luck Shitass!");
+    $(".category-button p").remove();
+    $(".category-button").append(categoryDiv);
+});
+
+
+
 $("#submit-button").on("click", function() {
     let songName = $("#song-search").val();
     var queryURL = "https://itunes.apple.com/search?term=" + songName + "&limit=2";
