@@ -35,9 +35,8 @@ $("#submit-button").on("click", function() {
       // This can be changed to true to autoplay the track
       audioPlayer.attr("autoplay", true);
 
-      // Add audio player to the jumbotron
-      // $jumbotron.append(audioPlayer);
+      // Add audio player to the result box
 
-       $("#result-box").append(audioPlayer);
+       $("#audio-player").append(audioPlayer);
       });
   });
