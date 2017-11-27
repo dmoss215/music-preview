@@ -49,7 +49,7 @@ $("#submit-button").on("click", function () {
             audioPlayer.addClass("myAudioPlayer");
             audioPlayer.attr("src", preview);
 
-            // Adds the audio player controls to the HTML5 Audio Element
+            // Adds the audio player controls to the HTML5 Audio element
             audioPlayer.attr("controls", "controls");
 
             // This can be changed to true to autoplay the track
