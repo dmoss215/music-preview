@@ -1,3 +1,16 @@
+// =========  Add player and set lives to 3 ======================
+$("#add-player-button").on('click', function () { 
+    let playerName = $("#add-player").val().trim();
+    let playerDiv = $("<span>");
+    playerDiv.text(playerName);
+    playerDiv.addClass("players")
+    $("#player-area").append(playerDiv);
+    $('input[type="text"]').val('');
+ });
+
+
+
+// ===========  Random Category Button that selects a random category ================================
 $("#category-button").on("click", function () {
     let categories = ["COUNTRY", "ROCK", "RAP", "HIP HOP", "R&B", "ALTERNATIVE", "GRUNGE", "BOY BANDS"]
     let category = categories[Math.floor(Math.random() * categories.length)];
@@ -14,6 +27,11 @@ $("#category-button").on("click", function () {
 $("#submit-button").on("click", function () {
     let songName = $("#song-search").val();
     var queryURL = "https://itunes.apple.com/search?term=" + songName + "&limit=2";
+
+    // =============  Empty the elements for the music player, album img, and song info ============================
+    $("#audio-player").empty();
+    $("#album-cover").empty();
+    $("#song-info").empty();
 
     console.log(songName);
     $.ajax({

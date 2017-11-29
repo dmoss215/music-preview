@@ -17,6 +17,18 @@ p {
     margin-bottom: 15px;
 }
 
+#add-player {
+    width: 175px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 50px;
+}
+
+#add-player-button {
+    float: left;
+    margin-right: 50px;
+}
+
 .search-row {
     margin-bottom: 40px;
 }
@@ -40,4 +52,10 @@ p {
 
 .category-button {
     font-family: 'Jura', sans-serif;
+}
+
+.players {
+    font-size: 20px;
+    color: white;
+    margin-right: 25px;
 }
